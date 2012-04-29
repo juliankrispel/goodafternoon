@@ -1,0 +1,10 @@
+!!!
+html
+    head
+        title= data.title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        if(data.Style)
+            link(rel='stylesheet', href= data.Style)
+    body
+        !=partial('header')
+        !=body

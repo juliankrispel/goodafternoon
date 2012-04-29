@@ -1,0 +1,8 @@
+header
+    img(width="130",src="http://goodafternoon.s3.amazonaws.com/assets/ga_logo.png")
+    if data.prevPost
+        a(href= "/" + data.prevPost.url)
+            "prev"
+    if data.nextPost
+        a(href= "/" + data.nextPost.url)
+            "next"
