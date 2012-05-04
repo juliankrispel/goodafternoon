@@ -1,8 +1,111 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size: 26px;
+}
+
+body.showInfo{
+    margin-top: 220px;
+}
+
+.right{
+    float:right;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+h1{
+    font-size: 46px;
+    font-family: Raleway, Poiret One, Nixie One, Josefin Sans;
+    color: inherit;
+    font-weight: normal;
 }
 
 a {
-  color: #00B7FF;
+    color: inherit;
+    cursor: pointer;
+    transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    border-bottom: 1px solid #fff;
+}
+
+/* Header */
+
+header{
+    width:95%;
+    margin: 0 30px -100px 0;
+    padding: 2.5%;
+    text-align: left;
+    font-size: 15px;
+    position: absolute;
+}
+
+header nav{
+    font-size: 22px;
+}
+
+header nav *{
+    margin-left: 20px;
+    border: none;
+}
+
+header #wtf{
+    font-size: 22px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+a.logo{
+    display:inline-block;
+    width: 150px;
+    opacity: 0.5;
+    float: left;
+    border: none;
+}
+
+a.close{
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    border: none;
+}
+
+.info{
+    position:absolute;
+    top: -220px;
+    width: 100%;
+    left:0;
+    background: #666;
+    box-shadow: inset 0px -20px 30px -20px #000, 0 0 5px #fff;
+}
+
+.info aside{
+    position: relative;
+    float:right;
+    width: 40%;
+    line-height: 1.5em;
+    z-index: 99;
+    color: #fff;
+    padding: 30px;
+}
+
+.info aside p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.info aside img{
+    margin-right: 20px;
+}
+
+a.logo:hover{
+    opacity: 1;
+    -webkit-transform: rotate(-5deg) scalex(1.05) scaley(1.05);
 }

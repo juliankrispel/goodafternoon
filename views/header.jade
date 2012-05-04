@@ -1,8 +1,18 @@
+section.info
+    aside
+        img.left(src="http://goodafternoon.s3.amazonaws.com/assets/julian.png", alt="Julian's Head")
+        p I'm Julian (Krispel-Samsel). I draw pictures, paint films and make websites. I work at <a href="http://www.outeredgeuk.com">OuterEdge</a>, but still do a bit of freelancing in my spare-time. 
+        p Say Hi at <a href="mailto:julian@goodafternoon.co">julian@goodafternoon.co</a> or on <a href="https://twitter.com/#!/juliandoesstuff">Twitter</a>
+        a.close &times;
+
 header
-    img(width="130",src="http://goodafternoon.s3.amazonaws.com/assets/ga_logo.png")
-    if data.prevPost
-        a(href= "/" + data.prevPost.url)
-            "prev"
-    if data.nextPost
-        a(href= "/" + data.nextPost.url)
-            "next"
+    a(href="").logo
+        img(width="100",src="http://goodafternoon.s3.amazonaws.com/assets/ga_logo_white.png")
+
+    nav.right
+        if data.prevPost || data.nextPost
+            if data.prevPost
+                a(href= "/" + data.prevPost.url) &lt;
+            if data.nextPost
+                a(href= "/" + data.nextPost.url) &gt;
+        a#wtf ?

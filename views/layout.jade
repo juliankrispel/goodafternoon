@@ -1,10 +1,24 @@
 !!!
 html
     head
-        title= data.title
+        title(title = "data.title") 
+        link(href='http://fonts.googleapis.com/css?family=Astloch|Nixie+One|Overlock|Droid+Sans|Poiret+One|Flamenco|Josefin+Sans|Tulpen+One|Lobster+Two|Forum|Raleway:100|Open+Sans', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='/stylesheets/foundation.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
         if(data.Style)
             link(rel='stylesheet', href= data.Style)
+
     body
         !=partial('header')
-        !=body
+        article.display.row
+            !=body
+            
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",type="text/javascript")
+    script(src="/javascripts/app.js", type="text/javascript")
+    style body{
+        transition: .5s;
+        -moz-transition: .5s;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -webkit-transition: .5s;
+        }
